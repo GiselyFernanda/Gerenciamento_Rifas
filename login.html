@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <title>Formulário de PW</title>
+</head>
+
+<body>
+
+    <h1 class="text-center">Olá, responda todos os campos do formulario</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <form id="form">
+                    <div class="form-group mt-5">
+                        <label>Digite seu nome</label>
+                        <input type="text" name="NOME" id="NOME" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Infome sua bebida favorita</label>
+                        <input type="text" name="BEBIDA" id="BEBIDA" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Digite sua data de nascimento</label>
+                        <input type="date" name="ANO" id="ANO" class="form-control">
+                    </div>
+
+                    <div class="form-group row justify-content-end">
+                        <div class="col-12 col-sm-8 col-md-6">
+                            <button class="btn btn-success btn-dark btn-block btn-send">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="retorno">
+
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../controle/function.js"></script>
+</body>
+</html>
