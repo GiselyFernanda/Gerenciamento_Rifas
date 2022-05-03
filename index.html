@@ -1,62 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-
+=<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/home.css">
-    <title>Gerenciamento de Rifas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="shortcut icon" href="./img/ticket.png" type="image/x-icon">
+<title>Gerenciamento de Rifas</title>
+
 </head>
 
 <body>
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" id="navId">
-        <img class="Logo" src="img/ticket.png" alt="">
-        <li class="nav-item">
-            <a href="#tab1Id" class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="#tab5Id" class="nav-link">Usuarios</a>
-        </li>
-        <li class="nav-item">
-            <a href="#tab5Id" class="nav-link">Promoção</a>
-        </li>
-        <li class="nav-item">
-            <a href="#tab5Id" class="nav-link">Prêmio</a>
-        </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+        <a class="navbar-brand">
+            <img src="./img/ticket.png" alt="e-rifas" width="50" height="50">
+        </a>
 
-        <li class="nav-item">
-            <a href="#tab5Id" class="nav-link sair">Sair do Sistema</a>
-        </li>
-        
-    </ul>
-    
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://rifadastico.infinityfreeapp.com/sistema.html#"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://rifadastico.infinityfreeapp.com/sistema.html#"><i class="fa-solid fa-user"></i> Usuários</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://rifadastico.infinityfreeapp.com/sistema.html#"><i class="fa-solid fa-receipt"></i> Promoção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://rifadastico.infinityfreeapp.com/sistema.html#"><i class="fa-solid fa-cart-arrow-down"></i> Prêmio</a>
+                </li>
+            </ul>
+            <a class="nav-link text-dark" href="http://rifadastico.infinityfreeapp.com/sistema.html#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+        </div>
+    </nav>
+
+    <div id="content" class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-12 mt-5">
+
+                <h4 class="text-center text-warning">
+                    🎫  Bem vindo ao Sistema de Gerenciamento de Rifas 🎫
+                </h4>
+
+                <img src="./img/ticket.png" alt="e-rifas" class="img-fluid">
+            </div>
+        </div>
     </div>
-    
-    <script>
-        $('#navId a').click(e => {
-            e.preventDefault();
-            $(this).tab('show');
-        });
-    </script>
 
-<h1 class="text-center"> Bem vindo ao sistema de gerenciamento de rifas </h1>
-<img src="img/ticket.png" alt="">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../controle/function.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 </html>
+
