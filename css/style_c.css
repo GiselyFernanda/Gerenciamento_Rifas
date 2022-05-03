@@ -1,0 +1,54 @@
+.btn-personal {
+    background-color: #D6A2E8;
+    color: black;
+    cursor: pointer;
+    font-family: Georgia, serif;
+}
+
+.btn-personal:not(:disabled):not(.disabled).active:focus {
+    color: #D6A2E8;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-personal:hover {
+    color: white;
+    background-color: #82589F;
+    border-color: #351b47;
+}
+
+.btn-personal:focus,
+.btn-personal.focus {
+    box-shadow: 0 0 0 0.2rem rgba( 130, 88, 159, 0.5)
+}
+
+.btn-personal.disabled,
+.btn-personal:disabled {
+    color: white;
+    background-color: #82589F;
+    border-color: #82589F;
+}
+
+.btn-personal:not(:disabled):not(.disabled):active,
+.btn-personal:not(:disabled):not(.disabled).active,
+.show>.btn-personal.dropdown-toggle {
+    color: white;
+    background-color: #82589F;
+    border-color: #82589F;
+}
+
+.btn-personal:not(:disabled):not(.disabled):active:focus,
+.btn-personal:not(:disabled):not(.disabled).active:focus,
+.show>.btn-personal.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba( 130, 88, 159, 0.5);
+}
+
+.ais {
+    margin-left: auto;
+    margin-right: auto;
+    color: #82589F;
+}
+
+.acc {
+    color: #82589F;
+}
