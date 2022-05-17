@@ -5,6 +5,8 @@ $(document).ready(function() {
 
         e.preventDefault();
 
+        //alterar as informações do modal para apresentação dos dados
+
         $('.modal-title').empty()
         $('.modal-body').empty()
 
@@ -20,7 +22,7 @@ $(document).ready(function() {
             url: 'src/tipo/modelo/view-tipo.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
-                    if('.modal-body').load('src/tipo/visao/form-tipo.html', function() {
+                    $('.modal-body').load('src/tipo/visao/form-tipo.html', function() {
                         $('#NOME').val(dado.dados.NOME)
                         $('#NOME').attr('readonly', 'true')
                     })
@@ -28,7 +30,7 @@ $(document).ready(function() {
                     $('#modal-tipo').modal('show')
                 } else {
                     Swal.fire({
-                        title: 'e-rifa',
+                        title: 'e-Rifa',
                         text: dado.mensagem,
                         type: dado.tipo,
                         confirmButtonText: 'OK'

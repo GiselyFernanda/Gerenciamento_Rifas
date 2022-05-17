@@ -7,11 +7,11 @@ $(document).ready(function() {
         let ID = `ID=${$(this).attr('id')}`
 
         Swal.fire({
-            title: 'e-rifa',
+            title: 'e-Rifa',
             text: 'Deseja realmente excluir esse registro?',
             icon: 'question',
             showCancelButton: true,
-            confirmButton: 'sim',
+            confirmButtonText: 'Sim',
             cancelButtonText: 'Não'
         }).then((result => {
             if (result.value) {
@@ -19,11 +19,12 @@ $(document).ready(function() {
                 $.ajax({
                     type: 'POST',
                     dataType: 'json',
-                    assynchronous: true,
+                    assync: true,
+                    data: ID,
                     url: 'src/tipo/modelo/delete-tipo.php',
                     success: function(dados) {
                         Swal.fire({
-                            title: 'e-rifa',
+                            title: 'e-Rifa',
                             text: dados.mensagem,
                             icon: dados.tipo,
                             confirmButtonText: 'OK'
