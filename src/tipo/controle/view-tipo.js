@@ -1,11 +1,8 @@
 $(document).ready(function() {
 
-
     $('#table-tipo').on('click', 'button.btn-view', function(e) {
 
-        e.preventDefault();
-
-        //alterar as informações do modal para apresentação dos dados
+        e.preventDefault()
 
         $('.modal-title').empty()
         $('.modal-body').empty()
@@ -38,5 +35,6 @@ $(document).ready(function() {
                 }
             }
         })
+
     })
 })

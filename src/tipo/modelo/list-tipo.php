@@ -12,7 +12,7 @@ $resultado = $pdo->query($sql);
 $qtdeLinhas = $resultado->rowCount();
 
 $filtro = $requestData['search']['value'];
-if( !empty($filtro)){
+if( !empty( $filtro ) ){
     $sql .= " AND (ID LIKE '$filtro%' ";
     $sql .= " OR NOME LIKE '$filtro%') ";
 }
@@ -31,13 +31,14 @@ $sql .= " ORDER BY $ordem $direcao LIMIT $inicio, $tamanho ";
 $resultado = $pdo->query($sql);
 $dados = array();
 while($row = $resultado->fetch(PDO::FETCH_ASSOC)){
-    $dados[] = array_map('utf, $row');
+    $dados[] = array_map('utf8_encode', $row);
 }
 
-    $json_data = array(
-        "draw" => intval($requestData['draw']),
-        "recordsTotal" => intval($qtdeLinhas),
-        'data' => $dados
-    );
+$json_data = array(
+    "draw" => intval($requestData['draw']),
+    "recordsTotal" => intval($qldeLinhas),
+    "recordsFiltered" => intval($totalFiltrados),
+    "data" => $dados 
+);
 
-    echo json_encode($json_data);
+echo json_encode($json_data);

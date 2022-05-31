@@ -1,14 +1,13 @@
 <?php
 
-    $hostname = "sql102.epizy.com";
-    $database = "epiz_31461389_rifas";
-    $username = "epiz_31461389";
-    $password = "b5dexyVmH3kl8sw";
+$hostname = "sql104.epizy.com";
+$dbname = "epiz_31796370_rifa";
+$username = "epiz_31796370";
+$password = "o2sSumuvRTBQ";
 
-    try{
-        $pdo = new PDO('mysql:host='.$hostname.';dbname'.$dbname, $username, $password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'Conectado';
-    } catch (PDOException $e) {
-        echo 'Error: '. $e->getMessage();
-    }
+try{
+    $pdo = new PDO('mysql:host='.$hostname.';dbname='.$dbname, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e){
+    echo 'Error: '.$e->getMessage();
+}

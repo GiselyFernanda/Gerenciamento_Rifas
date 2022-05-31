@@ -2,9 +2,7 @@ $(document).ready(function() {
 
     $('#table-tipo').on('click', 'button.btn-edit', function(e) {
 
-        e.preventDefault();
-
-        //Alterar as informações do modal para apresentação dos dados
+        e.preventDefault()
 
         $('.modal-title').empty()
         $('.modal-body').empty()
@@ -32,12 +30,11 @@ $(document).ready(function() {
                         title: 'e-Rifa',
                         text: dado.mensagem,
                         type: dado.tipo,
-                        confirmButtonText: 'Ok'
+                        confirmButtonText: 'OK'
                     })
                 }
             }
         })
 
     })
-
 })

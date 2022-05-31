@@ -1,0 +1,10 @@
+body{  
+    overflow: hidden;
+    background: linear-gradient(#83000e, #030303);
+    height: 108vh;
+}
+
+.ti{
+    width: 150px;
+    height: 150px;
+}

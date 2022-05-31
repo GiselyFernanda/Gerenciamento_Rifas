@@ -5,8 +5,8 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').apppend('Adicionar novo tipo de acesso')
-        
+        $('.modal-title').append('Adicionar novo tipo de acesso')
+
         $('.modal-body').load('src/tipo/visao/form-tipo.html')
 
         $('.btn-save').show()
