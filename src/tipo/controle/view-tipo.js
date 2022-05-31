@@ -4,6 +4,8 @@ $(document).ready(function() {
 
         e.preventDefault()
 
+        // Alterar as informações do modal para apresentação dos dados
+
         $('.modal-title').empty()
         $('.modal-body').empty()
 
@@ -26,10 +28,10 @@ $(document).ready(function() {
                     $('.btn-save').hide()
                     $('#modal-tipo').modal('show')
                 } else {
-                    Swal.fire({
-                        title: 'e-Rifa',
-                        text: dado.mensagem,
-                        type: dado.tipo,
+                    Swal.fire({ // Inicialização do SweetAlert
+                        title: 'e-Rifa', // Título da janela SweetAler
+                        text: dado.mensagem, // Mensagem retornada do microserviço
+                        type: dado.tipo, // Tipo de retorno [success, info ou error]
                         confirmButtonText: 'OK'
                     })
                 }
