@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     $('.btn-save').click(function(e) {
-        e.preventDefault()
+
+        e.preventDefault();
 
         let dados = $('#form-vendedor').serialize()
 
@@ -15,7 +16,7 @@ $(document).ready(function() {
             url: 'src/vendedor/modelo/save-vendedor.php',
             success: function(dados) {
                 Swal.fire({
-                    title: 'e-Rifa',
+                    title: 'e-rifa',
                     text: dados.mensagem,
                     icon: dados.tipo,
                     confirmButtonText: 'OK'
