@@ -1,4 +1,6 @@
 .vertical-center{
     align-content: center !important;
-    flex
+    flex-wrap: wrap !important;
+    display: flex !important;
+    height: 100vh !important;
 }
