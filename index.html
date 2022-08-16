@@ -11,37 +11,45 @@
     <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.css">
     <link rel="stylesheet" href="libs/DataTables/datatables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.all.js">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: 30%;">
-                    <h1 class="text-center "><img class="ti" style="width: 100px; height: 100px;"  src="img/ticket.png" alt="ticket"> Login </h1>
+
+    <div class="container mt-2">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card shadow">
+                    <img class="img-fluid" src="img/ticket.png" alt="bus">
                     <div class="card-body">
-                        <form action="">
+                        <h5 class="card-title">Login do sistema</h5>
+                        <form id="form-login">
                             <div class="form-group">
-                                <label for="USER">Usuário:</label>
-                                <input id="USER" class="form-control" type="text" name="USER">
+                                <label>Login</label>
+                                <input type="text" name="LOGIN" id="LOGIN" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="SENHA">Senha:</label>
-                                <input id="SENHA" class="form-control" type="password" name="SENHA">
+                                <label>Senha</label>
+                                <input type="password" name="SENHA" id="SENHA" class="form-control">
                             </div>
-                            <div class="form-group d-grid gap-2 col-6 mx-auto mt-2">
-                                <a class=" form-control btn btn-dark text-white" href="sistema.html" role="button">Entrar</a>
+                            <div class="form-group row justify-content-end">
+                                <div class="col-12 col-sm-8 col-md-6">
+                                    <br>
+                                    <button class=" form-control btn btn-dark btn-block btn-login" role="button">
+                                         Entrar</button>
+                                </div>
                             </div>
                         </form>
-                        <br>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
-</body>
+    <script src="libs/sweetAlert/dist/sweetalert2.all.js"></script>
+    <script src="src/vendedor/controle/login-vendedor.js"></script>
 
+</body>
 </html>
