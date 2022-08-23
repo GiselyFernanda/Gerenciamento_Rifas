@@ -4,3 +4,7 @@
     display: flex !important;
     height: 100vh !important;
 }
+
+.L{
+    text-align:right;
+}
