@@ -33,8 +33,6 @@ $(document).ready(function() {
                         $('#table-vendedor').DataTable().ajax.reload()
                     }
                 })
-
-
             }
         })
     })
